@@ -1,0 +1,23 @@
+<ion-view view-title="Home">
+  <ion-content>
+      <div class="list">
+        <label class="item item-input">
+          <input type="text" placeholder="First Name" ng-model="user.firstname">
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="Last Name" ng-model="user.lastname">
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="Address" ng-model="user.address">
+        </label>
+        <button class="button button-positive button-block" ng-click="add(user)">Add People</button>
+         <button class="button button-positive button-block" ng-click="load()">view People</button>
+       <button class="button button-royal" ui-sref="/drag">Drag and Drop</button>
+      </div>
+      <div class="list">
+          <div class="item" ng-repeat="item in alldata">
+           {{item.id}}     {{item.firstname}} <button class="button button-"></button>
+          </div>
+      </div>
+  </ion-content>
+</ion-view>
